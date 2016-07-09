@@ -9,7 +9,7 @@
         <title>Live Chirp</title>
         <meta name="description" content="Live Chirp application">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="semantic/dist/semantic.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     </head>
@@ -20,33 +20,52 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="container">
-            <h1>Live Chirp</h1>
-            <div class="sidebar">
+        <div class="ui grid container wrapper">
+            <div class="sidebar four wide column">
+                <h1 class="ui blue header">Live Chirp</h1>
+                <div class="ui divider"></div>
                 <div class="profile">
-                    <h3>Profile</h3>
-                    <img src="http://www.gravatar.com/avatar/4a646bf1ec158050cf7962a7af95b2f4?s=200" alt="UseurName">
-                    <p>UserName</p>
-                </div>
-                <div class="stats">
-                    <h3>Stats:</h3>
-                    <p>Posts: <span>0</span></p>
+                    <h3 class="ui teal header">Profile</h3>
+                    <div class="ui card">
+                        <div class="image">
+                            <img src="http://www.gravatar.com/avatar/290e42f60307822eafadcedd7994f934.jpg?s=512" alt="userName">
+                        </div>
+                        <div class="content">
+                            <a class="header">userName</a>
+                        </div>
+                        <div class="extra content">
+                            <a>
+                                <i class="send icon"></i>
+                                <span class="chirps">0</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="feed">
-                <form action="" class="form">
-                    <div class="fields">
-                        <textarea class="user-input" name="post" id="post" cols="30" rows="3"></textarea>
-                        <span class="count user-input" data-max="140">140</span>
-                        <button type="submit">Tweet it!</button>
+            <div class="feed twelve wide column">
+                <form action="" class="ui form">
+                    <div class="field">
+                        <textarea name="post" id="post" cols="30" rows="3"></textarea>
+                    </div>
+                    <div class="field">
+                        <div class="ui green label characters">
+                            <i class="font icon"></i>
+                            <span class="count" data-max="140">140</span>
+                        </div>
+                        <button type="submit" class="ui blue right floated button">
+                            <i class="send icon"></i>
+                            Chirp it!
+                        </button>
                     </div>
                 </form>
-                <ul class="posts">
-                </ul>
+                <div class="ui divider"></div>
+                <div class="ui posts feed"></div>
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script src="js/lib/moment.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
