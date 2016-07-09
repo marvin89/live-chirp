@@ -24,7 +24,7 @@ app.post('/tweets', function(req, res) {
 	console.log(req.body);
 	tweets.push(req.body);
 
-	fs.writeFile('./data/feed.json', JSON.stringify(tweets), function(err) {
+	fs.writeFile('./public/data/feed.json', JSON.stringify(tweets), function(err) {
 		if (err) {
 			res.send({ message: 'There was a problem!', success: false });
 		} else {
