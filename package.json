@@ -1,13 +1,13 @@
 {
-  "name": "jquery-twitter",
+  "name": "live-chirp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Live Chirp application",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "ITSchool",
   "license": "ISC",
   "dependencies": {
     "better-console": "^0.2.4",
