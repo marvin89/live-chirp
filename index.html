@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>jQuery twitter</title>
+        <meta name="description" content="A jQUery twitter client">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Dude, Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <div class="container">
+            <h1>jQuery twitter</h1>
+            <div class="sidebar">
+                <div class="profile">
+                    <h3>Profile</h3>
+                    <img src="http://www.gravatar.com/avatar/4a646bf1ec158050cf7962a7af95b2f4?s=200" alt="UseurName">
+                    <p>UserName</p>
+                </div>
+                <div class="stats">
+                    <h3>Stats:</h3>
+                    <p>Posts: <span>0</span></p>
+                </div>
+            </div>
+            <div class="feed">
+                <form action="" class="form">
+                    <div class="fields">
+                        <textarea class="user-input" name="post" id="post" cols="30" rows="3"></textarea>
+                        <span class="count user-input" data-max="140">140</span>
+                        <button type="submit">Tweet it!</button>
+                    </div>
+                </form>
+                <ul class="posts">
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

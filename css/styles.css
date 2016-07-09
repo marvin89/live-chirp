@@ -1,0 +1,123 @@
+/*
+*  html5 doctor css reset | http://html5doctor.com/html-5-reset-stylesheet
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;box-sizing: border-box;}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/*@import url(https://fonts.googleapis.com/css?family=Lobster);*/
+
+body {
+	font-family: 'Lobster', cursive;
+}
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	margin: 2em 0 3em;
+	color: indigo;
+}
+
+.sidebar {
+	float: left;
+	width: 30%;
+}
+
+.feed {
+	float: right;
+	width: 70%;
+}
+
+.fields {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+}
+
+button {
+	float: right;
+}
+
+.sidebar h3 {
+	font-size: 1.4em;
+	color: red;
+	margin-bottom: 0.5em;
+	margin-top: 0.2em;
+}
+
+.profile {
+	margin-bottom: 2em;
+	border-bottom: 3px solid indigo;
+	padding-bottom: 2em;
+}
+
+.profile p {
+	font-weight: 700;
+	margin-bottom: 0.2;
+}
+
+.posts {
+	list-style: none;
+	clear: both;
+	padding: 1em;
+}
+
+.posts li {
+	padding: 1em;
+	box-shadow: 0 1px 2px #ccc;
+	margin-bottom: 1em;
+	background-color: #CACACA;
+}
+
+.posts li p {
+	margin-top: 1em;
+}
+
+.posts li h6 {
+	font-size: 0.6em;
+	font-weight: 300;
+	line-height: 1.5em;
+	color: #999;
+}
+
+.posts li h4 {
+	color: indigo;
+}
+
+.posts li h4:before {
+	content: "@"
+}
+
+.posts li:hover {
+	transform: scale(1.1);
+	transition: all 0.3s ease;
+	box-shadow: 0 5px 5px #faf;
+}
+
+.warning {
+    color: red;
+}
