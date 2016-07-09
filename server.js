@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var app = express();
 
-var tweets = require('./data/feed.json');
+var tweets = require('./public/data/feed.json');
 
 app.use(function(req, res, next) {
 	res.header("Access-Control-Allow-Origin", "*");
@@ -11,11 +11,13 @@ app.use(function(req, res, next) {
 	next();
 });
 
+app.use(express.static('public'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function(req, res) {
-	res.send('Welcome to jQuery Twitter');
+	res.sendFile(__dirname + '/public/index.html');
 });
 
 app.post('/tweets', function(req, res) {
